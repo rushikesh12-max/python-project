@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-control {
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 15px; /* Add margin bottom for spacing */
+    }
+    .form-check-input {
+      transform: scale(1.5);
+    }
+    .btn {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>User Dashboard</h2>
+    <p><b>Name: </b> {{user.name}}</p>
+    <p><b>Email: </b> {{user.email}}</p>
+    <a href = "/logout" class="btn btn-dark">Logout</a>
+  </div>
+</body>
+</html>
